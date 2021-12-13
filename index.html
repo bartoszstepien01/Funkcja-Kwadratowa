@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="shortcut icon" href="parabola.svg" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+	<title>Kalkulator funkcji kwadratowej</title>
+</head>
+<body>
+	<canvas></canvas>
+	<div class="control">
+		<div class="control-header-footer">
+			<h2>Kalkulator funkcji kwadratowej</h2>
+			<p>Bartosz Stępień kl. IIIbp</p>
+		</div>
+		<div class="functions-container">
+			<p>Nie dodano żadnej funkcji</p>
+		</div>
+		<form class="control-header-footer">
+			<div class="function add-function" style="--colour: #ff0000;">
+				<div class="function-square">
+					<input type="color" name="colour" value="#ff0000">
+				</div>
+				<div class="function-equation">
+					<p>
+						<input type="number" name="a" value="1" step="any">
+						<span>x<sup>2</sup> +</span>
+						<input type="number" name="b" value="0" step="any">
+						<span>x +</span>
+						<input type="number" name="c" value="0" step="any">
+					</p>
+				</div>
+			</div>
+			<input type="submit" value="+ Dodaj funkcję">
+		</form>
+	</div>
+	<script type="module" src="script.js"></script>
+</body>
+</html>

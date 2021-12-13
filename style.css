@@ -1,0 +1,142 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: "Montserrat";
+}
+
+.control {
+	background-color: white;
+	border: solid #dcdcdc 1px;
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.control-header-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.functions-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	overflow: auto;
+	flex-shrink: 0;
+	max-height: 50vh;
+	-ms-overflow-style: none;
+  	scrollbar-width: none;
+}
+
+.functions-container::-webkit-scrollbar {
+	display: none;
+}
+
+.function {
+	border: solid var(--colour) 1px; 
+	display: flex;
+}
+
+.function-square {
+	position: relative;
+	width: 15%;
+	height: 0;
+	padding-bottom: 15%;
+	background-color: var(--colour);
+}
+
+.function-square > * {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.function-equation {
+	width: 85%;
+	display: flex;
+	align-items: center;
+}
+
+.function-equation > p {
+	margin-left: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+p > span {
+	vertical-align: bottom;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  	-webkit-appearance: none;
+  	margin: 0;
+}
+
+input[type=number] {
+  	-moz-appearance: textfield;
+
+  	width: 2rem;
+}
+
+input {
+	border: solid #dcdcdc 1px;
+	font-family: "Montserrat";
+}
+
+input:focus {
+	outline: none;
+}
+
+input[type=submit] {
+	background-color: #32CD32;
+	border: none;
+	font-size: medium;
+	color: white;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+input[type=submit]:hover {
+	background-color: #2bb32b;
+}
+
+input[type=color] {
+	padding: 0;
+	background: none;
+	border: none;
+}
+
+input[type=color]::-webkit-color-swatch {
+	display: none;
+    border: none;
+	padding: 0;
+}
+
+.remove {
+	background: none;
+	outline: none;
+	border: none;
+	opacity: 0;
+	font-family: "Montserrat";
+	font-size: medium;
+	color: white;
+}
+
+.remove:hover {
+	opacity: 100;
+}
